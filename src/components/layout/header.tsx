@@ -15,10 +15,10 @@ export const Header = () => {
   ];
   return (
     <header>
-      <nav className="bg-[#EEEFF1] border-gray-200 px-4 lg:px-6 py-2.5">
+      <nav className="bg-[#1B1B1D] border-gray-200 px-4 lg:px-6 py-2.5">
         <div className="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
           <a href={routes.home} className="flex items-center">
-            <span className="self-center text-xl font-semibold whitespace-nowrap text-[#1B1B1D]">
+            <span className="self-center text-xl font-semibold whitespace-nowrap text-white">
               Alovi Coffee
             </span>
           </a>
@@ -30,13 +30,13 @@ export const Header = () => {
             />
             <Button
               label="Buy Gift Voucher"
-              className="!bg-[#1B1B1D] !border-none !text-white"
+              className="!bg-white !border-none !text-[#1B1B1D] !font-semibold"
               shape="round"
             />
             <button
               onClick={() => setMenuOpen((open) => !open)}
               type="button"
-              className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+              className="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/30"
               aria-controls="mobile-menu-2"
               aria-expanded={menuOpen}
             >
@@ -80,8 +80,7 @@ export const Header = () => {
                     <Link
                       onClick={() => setMenuOpen(false)}
                       href={item.url}
-                      className="block py-2 pr-4 pl-3 text-[#1B1B1D] rounded bg-primary-700 lg:bg-transparent lg:text-primary-700 lg:p-0"
-                      aria-current="page"
+                      className="block py-2 pr-4 pl-3 text-white rounded bg-[#2A2A2E] lg:bg-transparent lg:p-0 hover:text-[#E8C99B] transition-colors"
                     >
                       {item.label}
                     </Link>
